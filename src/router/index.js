@@ -10,6 +10,10 @@ import NavMenu from '../components/element/e_nav.vue'
 import Pagination from '../components/element/e_page.vue'
 import Tab from '../components/element/e_tab.vue'
 import Step from '../components/element/e_step.vue'
+import Mytest from '../components/mytest/mytest.vue'
+import Mytest2 from '../components/mytest2/mytest2.vue'
+import Test from '../components/test/test.vue'
+import Test1 from '../components/test/test1.vue'
 
 Vue.use(Router)
 
@@ -62,6 +66,26 @@ export default new Router({
       path: '/index/step',
       component: Step,
       name: 'step'
+    }, {
+      path: '/index/mytest',
+      component: Mytest,
+      name: 'mytest'
+    }, {
+      path: '/index/mytest2',
+      component: Mytest2,
+      name: 'mytest2'
+    },{
+      path: '/index/test',
+      component: Test,
+      children: [{
+        path: '/',
+        name: 'test',
+        redirect: '/test1'
+      }, {
+        path: '/test1',
+        component: Test1,
+        name: 'test1'
+      }]
     }]
   }]
 })
