@@ -54,17 +54,22 @@
                         path: '/index/mytest2',
                         class: 'fa-step-forward'
                     }
+                    , {
+                        title: '我的测试3',
+                        path: '/index/mytest3',
+                        class: 'fa-step-forward'
+                    }
                 ],
                 blog_item: [
                     {
                         title: '用户',
                         path: '/index/user',
                         class: 'fa-user'
-                    }, {
+                    }/*, {
                         title: '文章',
                         path: '/index/article',
                         class: 'fa-newspaper-o'
-                    }/*, {
+                    }*//*, {
                         title: '评论',
                         path: '/index/comment',
                         class: 'fa-comment-o'

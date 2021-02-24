@@ -12,6 +12,7 @@ import Tab from '../components/element/e_tab.vue'
 import Step from '../components/element/e_step.vue'
 import Mytest from '../components/mytest/mytest.vue'
 import Mytest2 from '../components/mytest2/mytest2.vue'
+import Mytest3 from '../components/mytest3/mytest3.vue'
 import Test from '../components/test/test.vue'
 import Test1 from '../components/test/test1.vue'
 
@@ -74,6 +75,10 @@ export default new Router({
       path: '/index/mytest2',
       component: Mytest2,
       name: 'mytest2'
+    }, {
+      path: '/index/mytest3',
+      component: Mytest3,
+      name: 'mytest3'
     },{
       path: '/index/test',
       component: Test,
